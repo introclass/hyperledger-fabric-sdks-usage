@@ -3,7 +3,7 @@ layout: default
 title:  README
 author: lijiaocn
 createdate: 2018/07/15 14:14:00
-changedate: 2018/07/15 18:24:08
+changedate: 2018/07/15 18:42:21
 
 ---
 
@@ -15,6 +15,10 @@ changedate: 2018/07/15 18:24:08
 release-1.1
 
 `注意将msp和tls，以及代码中的url，替换成你自己的。`
+
+使用过程中遇到的一些问题，记录在这里：[Fabric的nodejs sdk使用时遇到的问题](https://www.lijiaocn.com/问题/2018/07/15/hyperledger-fabric-nodejs-problem.html)
+
+(github正在抽风，页面还没生成，2018-07-15 18:41:40)
 
 ## 准备合适的node版本
 
@@ -30,7 +34,7 @@ release-1.1
 
 或者直接下载安装：[nodejs download][1]
 
-## 这里用npm管理依赖包
+## 用npm管理依赖包
 
 创建文件package.json：
 
