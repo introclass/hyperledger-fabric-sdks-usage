@@ -3,7 +3,7 @@ layout: default
 title:  README
 author: lijiaocn
 createdate: 2018/07/15 14:14:00
-changedate: 2018/07/15 17:55:32
+changedate: 2018/07/15 18:24:08
 
 ---
 
@@ -13,6 +13,8 @@ changedate: 2018/07/15 17:55:32
 ## 适用版本
 
 release-1.1
+
+`注意将msp和tls，以及代码中的url，替换成你自己的。`
 
 ## 准备合适的node版本
 
