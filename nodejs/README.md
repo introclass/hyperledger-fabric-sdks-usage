@@ -3,7 +3,7 @@ layout: default
 title:  README
 author: lijiaocn
 createdate: 2018/07/15 14:14:00
-changedate: 2018/07/15 18:42:21
+changedate: 2018/07/15 18:55:23
 
 ---
 
@@ -18,7 +18,7 @@ release-1.1
 
 使用过程中遇到的一些问题，记录在这里：[Fabric的nodejs sdk使用时遇到的问题](https://www.lijiaocn.com/问题/2018/07/15/hyperledger-fabric-nodejs-problem.html)
 
-(github正在抽风，页面还没生成，2018-07-15 18:41:40)
+(github正在抽风，页面还没生成，可以先看: [这里](https://github.com/lijiaocn/lijiaocn.github.io/blob/master/_posts/2018-07-15-hyperledger-fabric-nodejs-problem.md)  @2018-07-15 18:41:40)
 
 ## 准备合适的node版本
 
