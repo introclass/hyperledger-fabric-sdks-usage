@@ -3,7 +3,7 @@ layout: default
 title:  README
 author: lijiaocn
 createdate: 2018/07/15 14:14:00
-changedate: 2018/07/16 10:38:37
+changedate: 2018/07/18 10:24:57
 
 ---
 
@@ -16,7 +16,9 @@ release-1.1
 
 `注意将msp和tls，以及代码中的url，替换成你自己的。`
 
-使用过程中遇到的一些问题，记录在这里：[Fabric的nodejs sdk使用时遇到的问题](https://www.lijiaocn.com/问题/2018/07/15/hyperledger-fabric-nodejs-problem.html)
+使用说明见：[《超级账本HyperLedger：Fabric Node.js SDK的使用》](http://www.lijiaocn.com/%E7%BC%96%E7%A8%8B/2018/04/25/hyperledger-fabric-sdk-nodejs.html)
+
+使用过程中遇到的一些问题，记录在这里：[Fabric的Node.js SDK使用时遇到的问题](https://www.lijiaocn.com/问题/2018/07/15/hyperledger-fabric-nodejs-problem.html)
 
 ## 准备合适的node版本
 
