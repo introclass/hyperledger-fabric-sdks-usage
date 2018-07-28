@@ -1,2 +1,4 @@
 node_modules/
 *.swp
+*.iml
+.DS_Store
