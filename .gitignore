@@ -3,3 +3,4 @@ node_modules/
 *.iml
 .DS_Store
 .idea
+go/01-query/01-query

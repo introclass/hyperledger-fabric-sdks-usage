@@ -6,7 +6,8 @@ client:
   logging:
     level: info
   cryptoconfig:
-    path: ./crypto-config
+    path: ../crypto-config
+    #path: /opt/app/fabric/cli/user/member1.example.com/Admin-peer0.member1.example.com
   credentialStore:
     path: /tmp/
     cryptoStore:
@@ -23,13 +24,13 @@ client:
     systemCertPool: true
     client:
       key:
-        path: ./crypto-config/peerOrganizations/member1.example.com/users/Admin@member1.example.com/tls/client.key
+        path: ../crypto-config/peerOrganizations/member1.example.com/users/Admin@member1.example.com/tls/client.key
+        #path: /opt/app/fabric/cli/user/member1.example.com/Admin-peer0.member1.example.com/tls/client.key
       cert:
-        path: ./crypto-config/peerOrganizations/member1.example.com/users/Admin@member1.example.com/tls/client.crt
+        path: ../crypto-config/peerOrganizations/member1.example.com/users/Admin@member1.example.com/tls/client.crt
+        #path: /opt/app/fabric/cli/user/member1.example.com/Admin-peer0.member1.example.com/tls/client.crt
 channels:
   mychannel:
-    orderers:
-      - orderer0.member1.example.com
     peers:
       peer0.member1.example.com:
         endorsingPeer: true
@@ -49,6 +50,7 @@ organizations:
   member1.example.com:
     mspid: peers.member1.example.com
     cryptoPath: peerOrganizations/member1.example.com/users/Admin@member1.example.com/msp/
+    #cryptoPath: msp/
     peers:
       - peer0.member1.example.com
 orderers:
@@ -62,7 +64,8 @@ orderers:
       fail-fast: false
       allow-insecure: false
     tlsCACerts:
-      path: ./crypto-config/ordererOrganizations/member1.example.com/tlsca/tlsca.member1.example.com-cert.pem
+      path: ../crypto-config/ordererOrganizations/member1.example.com/tlsca/tlsca.member1.example.com-cert.pem
+      #path: /opt/app/fabric/cli/user/member1.example.com/Admin-peer0.member1.example.com/tlsca.member1.example.com-cert.pem
 peers:
   peer0.member1.example.com:
     url: peer0.member1.example.com:7051
@@ -75,4 +78,12 @@ peers:
       fail-fast: false
       allow-insecure: false
     tlsCACerts:
-      path: ./crypto-config/peerOrganizations/member1.example.com/peers/peer0.member1.example.com/tls/ca.crt
+      path: ../crypto-config/peerOrganizations/member1.example.com/peers/peer0.member1.example.com/tls/ca.crt
+      #path: /opt/app/fabric/cli/user/member1.example.com/Admin-peer0.member1.example.com/tls/ca.crt
+
+entityMatchers:
+  orderer:
+    - pattern: (\w*)orderer0.member1.example.com(\w*)
+      urlSubstitutionExp: orderer0.member1.example.com:7050
+      sslTargetOverrideUrlSubstitutionExp: orderer0.member1.example.com
+      mappedHost: orderer0.member1.example.com
