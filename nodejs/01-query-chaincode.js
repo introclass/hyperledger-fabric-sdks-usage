@@ -18,7 +18,7 @@ Fabric_Client.newDefaultKeyValueStore({ path: '/tmp/xx/' }).then((state_store) =
         username: 'Admin@member1.example.com',
         mspid: 'peers.member1.example.com',
         cryptoContent: { 
-            privateKey: './msp/keystore/09dd09cf530d8f0fa6cb383b5b409ae8e895d32d31f75823f3bdb3c1f3ee180a_sk',
+            privateKey: './msp/keystore/6928e27dd859394139687087fe093432f795a62a64c78b93d914609c8a56f493_sk',
             signedCert: './msp/signcerts/Admin@member1.example.com-cert.pem'
         }
     }

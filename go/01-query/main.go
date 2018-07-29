@@ -25,7 +25,8 @@ func main() {
 	}
 
 	//读取配置文件(config.yaml)中的组织(member1.example.com)的用户(Admin)
-	mspClient, err := mspclient.New(sdk.Context(), mspclient.WithOrg("member1.example.com"))
+	mspClient, err := mspclient.New(sdk.Context(),
+		mspclient.WithOrg("member1.example.com"))
 	if err != nil {
 		log.Fatalf("create msp client fail: %s\n", err.Error())
 	}
